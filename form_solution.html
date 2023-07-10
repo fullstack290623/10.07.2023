@@ -21,13 +21,15 @@ animal=fish
   <h2 style="color:blue">Registration Form</h2>
   <form>
     <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname" required><br>
+    <input type="text" id="fname" name="fname" required 
+            placeholder="Your first name"><br>
     <br />
     <label for="lname">Last Name:</label>
     <input type="text" id="lname" name="lname" required><br>
     <br />
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br>
+    <input type="email" id="email" name="email" required autofocus
+        value="itayhau@gmail.com"><br>
     <br />
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required><br>
@@ -51,7 +53,7 @@ animal=fish
     <br />
     <br />
     
-    <input type="checkbox" id="vegan" name="vegan">
+    <input type="checkbox" id="vegan" name="vegan" checked>
     <label for="vegan">Vegan?</label>
     <br />
     <br />
@@ -59,14 +61,30 @@ animal=fish
     <label for="animal">Favorite Animal:</label><br>
     <input type="radio" id="dog" name="animal" value="dog" required="required">
     <label for="dog">Dog</label><br>
-    <input type="radio" id="cat" name="animal" value="cat">
+    <input type="radio" id="cat" name="animal" value="cat" >
     <label for="cat">Sweet Cat</label><br>
     <input type="radio" id="fish" name="animal" value="fish">
     <label for="fish">Fish</label><br>
     <br />
+    <br />
+    <label for="range1">Bass:</label><br>
+    <input type="range" id="range1" name="range1" value="90" >
+    
+    <br />
+    <br />
+    <label for="text1">Resume:</label><br>
+    <textarea id="text1" name="text1">
+
+    </textarea>
+    <br />  
     <br />  
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
   </form>
+
+    <div id="div1">
+        <h2>Goodbye! <span>span-text</span></h2>
+        <h3>See you soon : 5 &gt; 3 </h3>
+    </div>
 </body>
 </html>
